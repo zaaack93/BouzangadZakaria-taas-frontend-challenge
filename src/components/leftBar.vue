@@ -7,6 +7,8 @@
             solo
             :items="repos"
             v-model="value"
+            item-text="name"
+            return-object
             ></v-autocomplete>
      </v-col>
 </template>
@@ -15,12 +17,7 @@
 export default {
     computed:{
         repos(){
-            //map une liste des noms
-            let names=[]
-            this.$store.getters["github/Getrepos"].map(rep=>{ 
-                names.push(rep.name)
-            })
-            return names
+            return this.$store.getters["github/Getrepos"]
         }
     },
 data(){

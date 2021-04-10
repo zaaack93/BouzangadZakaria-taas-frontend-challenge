@@ -10,7 +10,7 @@
       color="primary"
       @click="$router.push('/public')"
     >
-      Go to authorize page
+      Go to home page
     </v-btn>
           </v-card>
         </v-flex>

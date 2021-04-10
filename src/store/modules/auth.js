@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Axios from "axios";
-import config from "../../config";
+import config from "@/config";
 import { Errormsg } from "@/helpers/errormsg";
 
 export default {
