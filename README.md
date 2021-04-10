@@ -4,7 +4,7 @@
 
 ## Synopsis
 
-- Web application user api github  [(REST)](https://developer.github.com/)
+- Web application used api github  [(REST)](https://developer.github.com/)
 - Solution : Dashboard : Overview and latest repositories and commits per branchs .
 
 ## Libraries used
@@ -15,7 +15,7 @@
 
 ``` bash
 
-git clone zaaack93/BouzangadZakaria-taas-frontend-challenge
+git clone https://github.com/zaaack93/BouzangadZakaria-taas-frontend-challenge.git
 
 cd BouzangadZakaria-taas-frontend-challenge
 
