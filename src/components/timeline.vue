@@ -2,8 +2,9 @@
 <div>
     <v-virtual-scroll
       :items="Object.keys(items)"
-      :item-height="250"
-      height="300"
+      :item-height="300"
+      height="400"
+      
     >
     <template v-slot:default="{ item }">
         <v-list three-line>

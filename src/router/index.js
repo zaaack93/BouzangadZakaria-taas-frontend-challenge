@@ -36,6 +36,10 @@ const routes = [
     ],
   },
   {
+    path: "",
+    component: Authorization
+  },
+  {
     path: "*",
     component: NotFound
   }
