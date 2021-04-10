@@ -1,12 +1,18 @@
 <template>
 <div>
+    <v-virtual-scroll
+      :items="Object.keys(items)"
+      :item-height="250"
+      height="300"
+    >
+    <template v-slot:default="{ item }">
         <v-list three-line>
-      <template v-for="(item, index) in Object.keys(items)">
+      
         <v-subheader
           :key="index"
           v-text="formatHeader(item)"
         ></v-subheader>
-        <template v-for="item in items[item] ">
+        <template v-for="item in items[item] " >
         <v-list-item
           :key="item"
         >
@@ -23,9 +29,10 @@
             inset="true"
              :key="item.header"
         ></v-divider>
-           
+        </v-list>
       </template>
-    </v-list>
+    
+    </v-virtual-scroll>
 </div>
 
 </template>
@@ -40,6 +47,7 @@ export default {
 },
     data(){
         return {
+            index:0
         }
     },
     methods:{
