@@ -4,6 +4,7 @@ import PrivateLayout from '@/layouts/private.vue';
 import PublicLayout from '@/layouts/public.vue';
 import Authorization from "@/views/public/Authorise";
 import Loading from "@/views/public/Loading";
+import NotFound from "@/views/public/404";
 
 import Home from "@/views/private/home";
 
@@ -33,7 +34,11 @@ const routes = [
         component: Home,
       },
     ],
-}
+  },
+  {
+    path: "*",
+    component: NotFound
+  }
 ]
 
 const router = new VueRouter({
